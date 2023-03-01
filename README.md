@@ -14,4 +14,4 @@ I want the header hero to look like this!
 ![Image here](https://cdn.discordapp.com/attachments/1079178250057695293/1079192201260703814/image.png)
 
 We got it :)
-![Image here](https://cdn.discordapp.com/attachments/1079178250057695293/1080191373631824002/image.png)
+![Image here](https://media.discordapp.net/attachments/1079178250057695293/1080296961279807568/image.png?width=1019&height=676)
