@@ -7,16 +7,22 @@
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-Fo/xcLr0bR8RvuCfN7gvu0h0oV7NQ+MhJ9ZT6JeS3n3q8lshWdDtTDy4w4yJ6vz8/L+1Y+ZkL6ZJceBUV+8HGA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <!-- Custom CSS -->
         <link rel="stylesheet" href="./style.css">
         <link rel="stylesheet" href="./theme/home-hdr-styles.css">
         <link rel="stylesheet" href="./theme/home-discover-share-styles.css">
+        <link rel="stylesheet" href="./theme/home-gallery.css">
         <!-- JavaScript dependencies -->
         <script defer src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script defer src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <!-- Custom JS -->
+        <script defer src="./util/scroll-to-top.js"></script>
     </head>
-    <body>
+    <div>
+        <!-- TODO: 1: Add CDN for tailwindcss - 2: comment out CSS imports! - Test and move on! - DLT css copies! -->
+        <!-- !important: The stuff we've been copying from AI is DEF tailwindcss! -->
         <!-- Top Navbar -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
           <div class="container">
@@ -208,8 +214,46 @@
                         </div>
                     </div>
                 </div>
-                <h2 class="my-4 text-center">Gallery</h2>
-                <div class="spacer" style="height: 20vh;"></div>
+                <!-- <h2 class="my-4 text-center">Gallery</h2>
+                <div class="spacer" style="height: 20vh;"></div> -->
+            </div>
+        </section>
+        <!-- Gallery Section -->
+        <section class="py-5 bg-dark">
+            <div class="container pb-5">
+                <h1 class="display-4 text-center text-white font-weight-normal mb-4 mb-lg-5">Gallery</h1>
+                <div class="gallery-carousel row mx-auto">
+                    <div class="col-lg-4 col-md-6 my-4 mb-lg-0 g-4">
+                        <div class="card h-100">
+                            <img src="./assets/gallery/gallery-1.webp" class="card-img-top" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 my-4 mb-lg-0 g-4">
+                        <div class="card h-100">
+                            <img src="./assets/gallery/gallery-1.webp" class="card-img-top" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 my-4 mb-lg-0 g-4">
+                        <div class="card h-100">
+                            <img src="./assets/gallery/gallery-1.webp" class="card-img-top" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 my-4 mb-lg-0 g-4">
+                        <div class="card h-100">
+                            <img src="./assets/gallery/gallery-1.webp" class="card-img-top" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 my-4 mb-lg-0 g-4">
+                        <div class="card h-100">
+                            <img src="./assets/gallery/gallery-1.webp" class="card-img-top" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 my-4 mb-lg-0 g-4">
+                        <div class="card h-100">
+                            <img src="./assets/gallery/gallery-1.webp" class="card-img-top" alt="">
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
         <!-- Video Section -->
@@ -217,18 +261,24 @@
             <div class="container">
                 <div class="row py-3">
                     <div class="col-md-12 text-center">
-                    <h2 class="mb-4">Watch Our Adventure</h2>
-                    <p class="lead mb-4">Follow us as we travel across the Americas and spread the word about Bitcoin!</p>
+                    <h2 class="display-4 text-center font-weight-bold">
+                        Watch Our Adventure
+                    </h2>
+                    <p class="lead mb-4 text-xl font-weight-normal tracking-tight text-gray-900">
+                        Follow us as we travel across the Americas and spread the word about Bitcoin!
+                    </p>
                     <a href="#" class="btn btn-primary mb-4">Subscribe to Our Channel</a>
                     </div>
                     <div class="col-md-12">
-                        <div class="embed-responsive embed-responsive-16by9">
+                        <div class="embed-responsive embed-responsive-16by9" style="box-shadow: 0px 25px 20px -15px #111;">
                             <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/VIDEO_ID_HERE" allowfullscreen></iframe>
                         </div>
+                        <p class="disclaimer text-center font-italic font-weight-lighter text-sm mt-3">* Disclaimer text goes here</p>
                     </div>
                 </div>
             </div>
         </section>
+        <!-- TODO: Next section to be updated! -->
         <!-- CTA donation Section -->
         <section id="cta" class="section bg-secondary py-5">
             <div class="container">
@@ -244,7 +294,7 @@
             </div>
         </section>
         <!-- Footer Section -->
-        <footer id="footer" class="bg-dark ">
+        <footer id="footer" class="bg-dark">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 text-center pt-3">
@@ -260,5 +310,7 @@
                 </div>
             </div>
         </footer>
+        <!-- Scrollto top button -->
+        <button onclick="topFunction()" id="scrollBtn" class="btn btn-outline-light rounded-circle"><i class="fas fa-chevron-up"></i></button>
     </body>
 </html>
