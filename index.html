@@ -11,29 +11,39 @@
         <!-- Custom CSS -->
         <link rel="stylesheet" href="./style.css">
         <link rel="stylesheet" href="./theme/home-hdr-styles.css">
-        <link rel="stylesheet" href="./theme/home-discover-share-styles.css">
-        <link rel="stylesheet" href="./theme/home-gallery.css">
+        <!-- <link rel="stylesheet" href="./theme/home-discover-share-styles.css">
+        <link rel="stylesheet" href="./theme/home-gallery.css"> -->
         <!-- JavaScript dependencies -->
+        <script src="https://cdn.tailwindcss.com"></script>
         <script defer src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script defer src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
         <!-- Custom JS -->
+        <script>
+            // DOesn't work
+            tailwind.config = {
+              theme: {
+                extend: {
+                  colors: {
+                    green: '#92E3A9',
+                  }
+                }
+              }
+            }
+        </script>
         <script defer src="./util/scroll-to-top.js"></script>
     </head>
     <div>
-        <!-- TODO: 1: Add CDN for tailwindcss - 2: comment out CSS imports! - Test and move on! - DLT css copies! -->
-        <!-- !important: The stuff we've been copying from AI is DEF tailwindcss! -->
+        <!-- TODO: 1: DLT css copies! -->
         <!-- Top Navbar -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
           <div class="container">
-            <a class="navbar-brand" href="#">
-                Amor Vida Style
-            </a>
+            <a class="navbar-brand" href="#">Amor Vida Style</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav ml-auto">
+              <ul class="navbar-nav ml-auto text-white">
                 <li class="nav-item active">
                   <a class="nav-link" href="#about">About</a>
                 </li>
@@ -65,7 +75,7 @@
                     <div class="mt-14">
                         <div class="mt-6 sm:max-w-xl">
                             <h1 class="text-4xl font-black tracking-tight text-gray-900 sm:text-6xl md:text-7xl">
-                                Love, Learn, Grow &amp; Live the Bitcoin/Nomad Lifestyle<span class="text-primary">.</span>
+                                Love, Learn, Grow &amp; Live the Bitcoin/Nomad Lifestyle<span class="text-primary text-green">.</span>
                             </h1>
                             <h2 class="mt-6 text-lg text-gray-500 sm:text-xl">
                                 Our mission is to promote Bitcoin adoption and spread the Bitcoin &amp; Eco lifestyle.
@@ -278,17 +288,27 @@
                 </div>
             </div>
         </section>
-        <!-- TODO: Next section to be updated! -->
         <!-- CTA donation Section -->
         <section id="cta" class="section bg-secondary py-5">
             <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-md-8">
-                        <h2 class="section-title text-white">Join our community today</h2>
-                        <p class="section-text text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <div class="flex flex-wrap flex-col items-center text-center">
+                    <div class="w-full md:w-8/12 lg:w-6/12 xl:w-8/12">
+                        <h2 class="text-4xl md:text-5xl lg:text-6xl text-white font-bold mb-4">
+                            Join our community today
+                        </h2>
+                        <p class="text-xl md:text-2xl lg:text-3xl text-white mb-8">
+                            Help us make a difference. Your support allows us to continue our mission of spreading awareness about Bitcoin and its potential.
+                            Every contribution, no matter how small, makes a meaningful impact.
+                        </p>
                     </div>
-                    <div class="col-md-4">
-                        <a href="#" class="btn btn-primary btn-lg btn-block">Donate Now</a>
+                    <div class="w-full md:w-4/12 lg:w-6/12 xl:w-4/12">
+                        <a  href="#"
+                            class="
+                                inline-block bg-success text-white text-lg md:text-xl lg:text-2xl font-semibold
+                                py-3 px-8 rounded-full shadow-lg hover:shadow-xl transition duration-300 text-decoration-none
+                            ">
+                            Donate & Join
+                        </a>
                     </div>
                 </div>
             </div>
@@ -314,3 +334,11 @@
         <button onclick="topFunction()" id="scrollBtn" class="btn btn-outline-light rounded-circle"><i class="fas fa-chevron-up"></i></button>
     </body>
 </html>
+
+<!-- Note: Helpful links: -->
+<!--
+    https://www.mixo.io/site/amor-vida-style-xg1dt/index.html
+    https://amorvidastyle.durable.co/
+    https://app.durable.co/website-builder?w=63d93d8160d895e285aced79
+    https://www.mixo.io/site/ai-ltgn-04945/index.html
+ -->
